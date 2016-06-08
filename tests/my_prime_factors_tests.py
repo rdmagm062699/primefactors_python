@@ -29,3 +29,10 @@ class MyPrimeFactorsTest(unittest.TestCase):
 		factors = pf.get_prime_factors(3)
 
 		nt.assert_equal(factors, [3])
+
+	def test_prime_factors_of_four(self):
+		pf = PrimeFactors()
+
+		factors = pf.get_prime_factors(4)
+
+		nt.assert_equal(factors, [2,2])
