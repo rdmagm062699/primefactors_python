@@ -1,3 +1,5 @@
 
 class PrimeFactors(object):
-	pass
+
+	def get_prime_factors(self, num):
+		return []
