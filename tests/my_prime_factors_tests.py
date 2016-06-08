@@ -43,3 +43,17 @@ class MyPrimeFactorsTest(unittest.TestCase):
 		factors = pf.get_prime_factors(9)
 
 		nt.assert_equal(factors, [3,3])
+
+	def test_prime_factors_of_ninety(self):
+		pf = PrimeFactors()
+
+		factors = pf.get_prime_factors(90)
+
+		nt.assert_equal(sorted(factors), [2,3,3,5])
+
+	def test_prime_factors_of_onehundredtwenty(self):
+		pf = PrimeFactors()
+
+		factors = pf.get_prime_factors(120)
+
+		nt.assert_equal(sorted(factors), [2,2,2,3,5])
