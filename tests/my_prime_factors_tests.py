@@ -15,3 +15,10 @@ class MyPrimeFactorsTest(unittest.TestCase):
 		factors = pf.get_prime_factors(1)
 
 		nt.assert_equal(factors, [])
+
+	def test_prime_factors_of_two(self):
+		pf = PrimeFactors()
+
+		factors = pf.get_prime_factors(2)
+
+		nt.assert_equal(factors, [2])
